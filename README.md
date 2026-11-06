@@ -16,7 +16,10 @@ ionisations, with their standard deviations over the events.
 
 | Macro | Particle | Physics | Energies | Events per energy |
 | --- | --- | --- | --- | --- |
-| `e-_dna_opt4.mac` | e- | `dna_opt4` | 12 eV – 10 keV | 1000 |
+| `e-_dna_opt2.mac` | e- | `dna_opt2` | 20 eV – 1 MeV | 1000 |
+| `e-_dna_opt4.mac` | e- | `dna_opt4` | 20 eV – 10 MeV | 1000 |
+| `e-_dna_opt6.mac` | e- | `dna_opt6` | 20 eV – 1 MeV | 1000 |
+| `e-_dna_opt8.mac` | e- | `dna_opt8` | 20 eV – 1 MeV | 1000 |
 
 `validation/parser.py` publishes two plots (x: energy in MeV, error: standard
 deviation / √N): the w value (eV) and the mean number of ionisations. There is no

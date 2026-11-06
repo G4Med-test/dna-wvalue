@@ -1,0 +1,36 @@
+# w value of electrons, 20 eV to 1 MeV, in liquid water with Geant4-DNA dna_opt8.
+# Validation macro, run unchanged by the CI (no /control/execute, loops or
+# aliases). One /run/beamOn per energy: Run::EndOfRun appends one line per
+# run to wvalue.txt, read by validation/parser.py.
+/control/verbose 2
+/run/verbose 1
+/run/numberOfThreads 4
+/random/setSeeds 12345 67890
+#
+/w/det/setMat G4_WATER
+/w/det/setRadius 1 m
+/w/det/setTrackingCut 10 eV
+/w/phys/addPhysics dna_opt8
+#
+/run/initialize
+/run/printProgress 0
+#
+/gun/particle e-
+#
+/gun/energy 20 eV
+/run/beamOn 1000
+#
+/gun/energy 100 eV
+/run/beamOn 1000
+#
+/gun/energy 1000 eV
+/run/beamOn 1000
+#
+/gun/energy 10000 eV
+/run/beamOn 1000
+#
+/gun/energy 100000 eV
+/run/beamOn 1000
+#
+/gun/energy 0.999 MeV
+/run/beamOn 1000

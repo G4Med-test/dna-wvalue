@@ -14,8 +14,7 @@ import os
 from geantval import energy_mev, getJSON, one_command
 
 TEST = "dna-wvalue"
-PHYSLISTS = {"dna", "dna_opt1", "dna_opt2", "dna_opt3", "dna_opt4", "dna_opt5", "dna_opt6",
-             "dna_opt7"}
+PHYSLISTS = {"dna_opt2", "dna_opt4", "dna_opt6", "dna_opt8"}
 
 # wvalue.txt columns after the energy: (observable, y axis, mean column, standard deviation column).
 QUANTITIES = (("w value", "w, eV", 3, 4),
